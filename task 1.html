@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 1 - Chat</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f4f4f4;}
+.box{background:white;width:300px;margin:auto;margin-top:50px;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Chat App</h2>
+
+<input id="msg" placeholder="Enter message">
+<button onclick="send()">Send</button>
+
+<div id="chat"></div>
+</div>
+
+<script>
+function send(){
+let msg=document.getElementById("msg").value;
+document.getElementById("chat").innerHTML += "<p>"+msg+"</p>";
+}
+</script>
+
+</body>
+</html>

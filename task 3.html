@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 3 - Collaboration</title>
+<style>
+body{text-align:center;font-family:Arial;}
+textarea{width:300px;height:150px;}
+</style>
+</head>
+
+<body>
+
+<h2>Live Editor (Simulation)</h2>
+
+<textarea id="txt" onkeyup="sync()"></textarea>
+
+<p id="preview"></p>
+
+<script>
+function sync(){
+let text=document.getElementById("txt").value;
+document.getElementById("preview").innerText=text;
+}
+</script>
+
+</body>
+</html>
